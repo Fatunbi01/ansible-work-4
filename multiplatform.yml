@@ -1,5 +1,5 @@
 ---
-   ---
+ ---
 - name: Install HTTP server
   hosts: g1
   become: yes
@@ -40,5 +40,6 @@
         name: apache2
         enabled: yes
       when: ansible_distribution == "Ubuntu" or ansible_distribution == "Debian"
+  
 
 ...
